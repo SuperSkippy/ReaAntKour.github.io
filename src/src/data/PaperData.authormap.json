@@ -1,5 +1,5 @@
 {
-  "Yusheng Zhao": [
+  "Yusheng Zhao\\*": [
     "antoniou-kourounioti_2021",
     "zhao_2020"
   ],
@@ -23,16 +23,8 @@
     "antoniou-kourounioti_2017"
   ],
   "Jo Hepworth": [
-    "jarad_2020",
     "hepworth_2020",
-    "hepworth2020preprint",
-    "antoniou-kourounioti_2018",
-    "hepworth_2018"
-  ],
-  "Julia I Qüesta": [
-    "jarad_2020",
-    "questa_2020",
-    "antoniou-kourounioti_2018"
+    "hepworth2020preprint"
   ],
   "Torbjörn Säll": [
     "hepworth_2020",
@@ -48,6 +40,9 @@
   ],
   "Stefanie Rosa": [
     "questa_2020",
+    "antoniou-kourounioti_2018"
+  ],
+  "Julia I Qüesta": [
     "antoniou-kourounioti_2018"
   ],
   "Rebecca H Bloomer": [

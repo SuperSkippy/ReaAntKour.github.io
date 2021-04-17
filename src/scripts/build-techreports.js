@@ -38,11 +38,11 @@ class TechReports {
     this.specialFieldMap = {
       techreport: ['institution', 'number'],
       inproceedings: ['booktitle', 'address'],
-      article: ['journal', 'volume', 'pages'],
+      article: ['journal', 'volume', 'pages', 'url'],
       phdthesis: ['school'],
       mastersthesis: ['school'],
       misc: ['howpublished'],
-      inbook: ['editor', 'chapter', 'publisher'],
+      inbook: ['editor', 'chapter', 'publisher', 'url'],
     };
   }
 

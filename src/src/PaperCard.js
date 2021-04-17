@@ -17,11 +17,11 @@ const formatMsThesis = entry => `${entry.authors.join(', ')},  **${entry.title}*
 
 const formatInProceedings = entry => `${entry.authors.join(', ')},  **${entry.title}**, In *${entry.booktitle}*, ${entry.address ? `${entry.address},` : ''} ${entry.month} ${entry.year}, ${(entry.note) ? `([pdf](${entry.note}))` : ''}`;
 
-const formatArticle = entry => `${entry.authors.join(', ')},  **${entry.title}**. *${entry.journal}*, ${entry.volume ? `**${entry.volume}**:` : ''} ${entry.pages ? `${entry.pages},` : ''} ${entry.month ? entry.month : ''} ${entry.year}  ${(entry.note) ? `, ([pdf](${entry.note}))` : ''}`;
+const formatArticle = entry => `${entry.authors.join(', ')},  **${entry.title}**. *${entry.journal}*, ${entry.volume ? `**${entry.volume}**:` : ''} ${entry.pages ? `${entry.pages},` : ''} ${entry.month ? entry.month : ''} ${entry.year}, ([link](${entry.url})) ${(entry.note) ? `, ([pdf](${entry.note}))` : ''}`;
 
 const formatMisc = entry => `${entry.authors.join(', ')},  **${entry.title}**, ${entry.howpublished}, ${entry.month} ${entry.year}, ${(entry.note) ? `([pdf](${entry.note}))` : ''}`;
 
-const formatInBook = entry => `${entry.authors.join(', ')},  **${entry.chapter}**, In *${entry.title}*, ${entry.year}, ${entry.publisher} ${(entry.note) ? `([pdf](${entry.note}))` : ''}`;
+const formatInBook = entry => `${entry.authors.join(', ')},  **${entry.chapter}**, In *${entry.title}*, ${entry.year}, ${entry.publisher}, ([link](${entry.url})) ${(entry.note) ? `([pdf](${entry.note}))` : ''}`;
 
 /* Make it easy to get the format function from the document type. */
 const formatMap = {
