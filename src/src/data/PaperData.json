@@ -1,0 +1,276 @@
+[
+  {
+    "key": "antoniou-kourounioti_2021",
+    "type": "article",
+    "title": "Feeling Every Bit of Winter - Distributed Temperature Sensitivity in Vernalization",
+    "year": "2021",
+    "month": "Jan",
+    "abstract": "Temperature intrinsically influences all aspects of biochemical and biophysical \r\nprocesses. Organisms have therefore evolved strategies to buffer themselves against \r\nthermal perturbations. Many organisms also use temperature signals as cues to align \r\nbehavior and development with certain seasons. These developmentally important \r\nthermosensory mechanisms have generally been studied in constant temperature \r\nconditions. However, environmental temperature is an inherently noisy signal, and it \r\nhas been unclear how organisms reliably extract specific temperature cues from \r\nfluctuating temperature profiles. In this context, we discuss plant thermosensory \r\nresponses, focusing on temperature sensing throughout vernalization in Arabidopsis. \r\nWe highlight many different timescales of sensing, which has led to the proposal of \r\na distributed thermosensing paradigm. Within this paradigm, we suggest a \r\nclassification system for thermosensors. Finally, we focus on the longest timescale, \r\nwhich is most important for sensing winter, and examine the different mechanisms in \r\nwhich memory of cold exposure can be achieved.",
+    "journal": "Frontiers in plant science",
+    "volume": "12",
+    "pages": "628726",
+    "authors": [
+      "Rea L Antoniou-Kourounioti\\*",
+      "Yusheng Zhao\\*",
+      "Caroline Dean",
+      "Martin Howard"
+    ],
+    "keywords": [
+      "Journal-Article"
+    ],
+    "sortKey": 202101
+  },
+  {
+    "key": "jarad_2020",
+    "type": "article",
+    "title": "Unique and contrasting effects of light and temperature cues on plant transcriptional programs",
+    "year": "2020",
+    "month": "Oct",
+    "abstract": "Plants have adapted to tolerate and survive constantly changing environmental conditions by \r\nreprogramming gene expression in response to stress or to drive developmental transitions. Among the many \r\nsignals that plants perceive, light and temperature are of particular interest due to their intensely \r\nfluctuating nature which is combined with a long-term seasonal trend. Whereas specific receptors are key \r\nin the light-sensing mechanism, the identity of plant thermosensors for high and low temperatures remains \r\nfar from fully addressed. This review aims at discussing common as well as divergent characteristics of \r\ngene expression regulation in plants, controlled by light and temperature. Light and temperature signaling \r\ncontrol the abundance of specific transcription factors, as well as the dynamics of co-transcriptional \r\nprocesses such as RNA polymerase elongation rate and alternative splicing patterns. Additionally, sensing \r\nboth types of cues modulates gene expression by altering the chromatin landscape and through the induction \r\nof long non-coding RNAs (lncRNAs). However, while light sensing is channeled through dedicated receptors, \r\ntemperature can broadly affect chemical reactions inside plant cells. Thus, direct thermal modifications of \r\nthe transcriptional machinery add another level of complexity to plant transcriptional regulation. Besides \r\nthe rapid transcriptome changes that follow perception of environmental signals, plant developmental transitions \r\nand acquisition of stress tolerance depend on long-term maintenance of transcriptional states (active or \r\nsilenced genes). Thus, the rapid transcriptional response to the signal (Phase I) can be distinguished from \r\nthe long-term memory of the acquired transcriptional state (Phase II – remembering the signal). In this review \r\nwe discuss recent advances in light and temperature signal perception, integration and memory in Arabidopsis \r\nthaliana, focusing on transcriptional regulation and highlighting the contrasting and unique features of each \r\ntype of cue in the process.",
+    "journal": "Transcription",
+    "volume": "11",
+    "pages": "134-159",
+    "authors": [
+      "Mai Jarad",
+      "Rea L Antoniou-Kourounioti†",
+      "Jo Hepworth†",
+      "Julia I Qüesta†"
+    ],
+    "keywords": [
+      "Journal-Article"
+    ],
+    "sortKey": 202010
+  },
+  {
+    "key": "hepworth_2020",
+    "type": "article",
+    "title": "Natural variation in autumn expression is the major adaptive determinant distinguishing Arabidopsis FLC haplotypes",
+    "year": "2020",
+    "month": "Sep",
+    "abstract": "In Arabidopsis thaliana, winter is registered during vernalization through the temperature-dependent \r\nrepression and epigenetic silencing of floral repressor FLOWERING LOCUS C (FLC). Natural Arabidopsis accessions \r\nshow considerable variation in vernalization. However, which aspect of the FLC repression mechanism is most \r\nimportant for adaptation to different environments is unclear. By analysing FLC dynamics in natural variants \r\nand mutants throughout winter in three field sites, we find that autumnal FLC expression, rather than epigenetic \r\nsilencing, is the major variable conferred by the distinct Arabidopsis FLC haplotypes. This variation influences \r\nflowering responses of Arabidopsis accessions resulting in an interplay between promotion and delay of flowering \r\nin different climates to balance survival and, through a post-vernalization effect, reproductive output. These \r\ndata reveal how expression variation through non-coding cis variation at FLC has enabled Arabidopsis accessions \r\nto adapt to different climatic conditions and year-on-year fluctuations.",
+    "journal": "eLife",
+    "volume": "9",
+    "pages": "e57671",
+    "authors": [
+      "Jo Hepworth",
+      "Rea L Antoniou-Kourounioti",
+      "Kristina Berggren",
+      "Catja Selga",
+      "Eleri H Tudor",
+      "Bryony Yates",
+      "Deborah Cox",
+      "Barley R Collier Harris",
+      "Judith A Irwin",
+      "Martin Howard",
+      "Torbjörn Säll",
+      "Svante Holm",
+      "Caroline Dean"
+    ],
+    "keywords": [
+      "Journal-Article"
+    ],
+    "sortKey": 202009
+  },
+  {
+    "key": "zhao_2020",
+    "type": "article",
+    "title": "Temperature-dependent growth contributes to long-term cold sensing",
+    "year": "2020",
+    "month": "Jul",
+    "abstract": "Temperature is a key factor in the growth and development of all organisms. Plants have to \r\ninterpret temperature fluctuations, over hourly to monthly timescales, to align their growth and development \r\nwith the seasons. Much is known about how plants respond to acute thermal stresses, but the mechanisms that \r\nintegrate long-term temperature exposure remain unknown. The slow, winter-long upregulation of VERNALIZATION \r\nINSENSITIVE 3 (VIN3), a PHD protein that functions with Polycomb repressive complex 2 to epigenetically \r\nsilence FLOWERING LOCUS C (FLC) during vernalization, is central to plants interpreting winter progression. \r\nHere, by a forward genetic screen, we identify two dominant mutations of the transcription factor NTL8 that \r\nconstitutively activate VIN3 expression and alter the slow VIN3 cold induction profile. In the wild type, \r\nthe NTL8 protein accumulates slowly in the cold, and directly upregulates VIN3 transcription. Through \r\ncombining computational simulation and experimental validation, we show that a major contributor to this \r\nslow accumulation is reduced NTL8 dilution due to slow growth at low temperatures. Temperature-dependent \r\ngrowth is thus exploited through protein dilution to provide the long-term thermosensory information for \r\nVIN3 upregulation. Indirect mechanisms involving temperature-dependent growth, in addition to direct \r\nthermosensing, may be widely relevant in long-term biological sensing of naturally fluctuating temperatures.",
+    "journal": "Nature",
+    "volume": "583",
+    "pages": "825--829",
+    "authors": [
+      "Yusheng Zhao\\*",
+      "Rea L Antoniou-Kourounioti\\*",
+      "Grant Calder",
+      "Caroline Dean",
+      "Martin Howard"
+    ],
+    "keywords": [
+      "Journal-Article"
+    ],
+    "sortKey": 202007
+  },
+  {
+    "key": "hepworth2020preprint",
+    "type": "article",
+    "title": "Natural variation in autumn FLC levels, rather than epigenetic silencing, aligns vernalization to different climates",
+    "year": "2020",
+    "month": "Apr",
+    "abstract": "Plants monitor temperatures over long timescales to assess seasons and time developmental \r\ntransitions. In Arabidopsis thaliana, winter is registered during vernalization through the temperature-dependent \r\nrepression and epigenetic silencing of floral repressor FLOWERING LOCUS C (FLC). Natural Arabidopsis accessions \r\nshow considerable variation in vernalization, however which aspect of the FLC repression mechanism is most \r\nimportant for adaptation to different climates is not clear. By analyzing FLC silencing in natural variants \r\nthroughout winter in three field sites, we find that FLC starting levels and early phases of silencing are \r\nthe major variables underlying vernalization response, rather than establishment of epigenetic silencing. This \r\nresults in an intricate interplay between promotion and delay of flowering to balance survival, and through a \r\npost-vernalization effect of FLC, reproductive effort via branch production. These data reveal how non-coding \r\nFLC variation aligns vernalization response to different climatic conditions and year-on-year fluctuations in \r\nnatural temperature profiles.Impact Statement Alleles of the major floral repressor vary in their initial \r\nexpression to underpin the ability of Arabidopsis to survive year-on-year climatic fluctuations.",
+    "journal": "bioRxiv",
+    "authors": [
+      "Jo Hepworth",
+      "Rea L Antoniou-Kourounioti",
+      "Kristina Berggren",
+      "Catja Selga",
+      "Eleri H Tudor",
+      "Bryony Yates",
+      "Deborah Cox",
+      "Barley R Collier Harris",
+      "Judith A Irwin",
+      "Martin Howard",
+      "Torbjörn Säll",
+      "Svante Holm",
+      "Caroline Dean"
+    ],
+    "keywords": [
+      "Journal-Article"
+    ],
+    "sortKey": 202004
+  },
+  {
+    "key": "questa_2020",
+    "type": "article",
+    "title": "Noncoding SNPs influence a distinct phase of Polycomb silencing to destabilize long-term epigenetic memory at Arabidopsis FLC",
+    "year": "2020",
+    "month": "Jan",
+    "abstract": "In Arabidopsis thaliana, the cold-induced epigenetic regulation of FLOWERING LOCUS C (FLC) \r\ninvolves distinct phases of Polycomb repressive complex 2 (PRC2) silencing. During cold, a PHD–PRC2 complex \r\nmetastably and digitally nucleates H3K27me3 within FLC. On return to warm, PHD–PRC2 spreads across the \r\nlocus delivering H3K27me3 to maintain long-term silencing. Here, we studied natural variation in this \r\nprocess in Arabidopsis accessions, exploring Lov-1, which shows FLC reactivation on return to warm, a \r\nfeature characteristic of FLC in perennial Brassicaceae. This analysis identifies an additional phase \r\nin this Polycomb silencing mechanism downstream from H3K27me3 spreading. In this long-term silencing \r\n(perpetuated) phase, the PHD proteins are lost from the nucleation region and silencing is likely \r\nmaintained by the read-write feedbacks associated with H3K27me3. A combination of noncoding SNPs in the \r\nnucleation region mediates instability in this long-term silencing phase with the result that Lov-1 FLC \r\nfrequently digitally reactivates in individual cells, with a probability that diminishes with increasing \r\ncold duration. We propose that this decrease in reactivation probability is due to reduced DNA replication \r\nafter flowering. Overall, this work defines an additional phase in the Polycomb mechanism instrumental in \r\nnatural variation of silencing, and provides avenues to dissect broader evolutionary changes at FLC.",
+    "journal": "Genes \\& Development",
+    "volume": "34",
+    "pages": "446--461",
+    "authors": [
+      "Julia I Qüesta\\*",
+      "Rea L Antoniou-Kourounioti\\*",
+      "Stefanie Rosa",
+      "Peijin Li",
+      "Susan Duncan",
+      "Charles Whittaker",
+      "Martin Howard",
+      "Caroline Dean"
+    ],
+    "keywords": [
+      "Journal-Article"
+    ],
+    "sortKey": 202001
+  },
+  {
+    "key": "antoniou-kourounioti_2018",
+    "type": "article",
+    "title": "Temperature Sensing Is Distributed throughout the Regulatory Network that Controls FLC Epigenetic Silencing in Vernalization",
+    "year": "2018",
+    "month": "Nov",
+    "abstract": "Many organisms need to respond to complex, noisy environmental signals for developmental decision \r\nmaking. Here, we dissect how Arabidopsis plants integrate widely fluctuating field temperatures over month-long \r\ntimescales to progressively upregulate VERNALIZATION INSENSITIVE3 (VIN3) and silence FLOWERING LOCUS C \r\n(FLC), aligning flowering with spring. We develop a mathematical model for vernalization that operates on \r\nmultiple timescales -- long term (month), short term (day), and current (hour) -- and is constrained by experimental \r\ndata. Our analysis demonstrates that temperature sensing is not localized to specific nodes within the FLC \r\nnetwork. Instead, temperature sensing is broadly distributed, with each thermosensory process responding to \r\nspecific features of the plants' history of exposure to warm and cold. The model accurately predicts FLC \r\nsilencing in new field data, allowing us to forecast FLC expression in changing climates. We suggest that distributed \r\nthermosensing may be a general property of thermoresponsive regulatory networks in complex natural environments.",
+    "journal": "Cell Systems",
+    "volume": "7",
+    "pages": "643--655.e9",
+    "authors": [
+      "Rea L Antoniou-Kourounioti\\*",
+      "Jo Hepworth\\*",
+      "Amélie Heckmann",
+      "Susan Duncan",
+      "Julia I Qüesta",
+      "Stefanie Rosa",
+      "Torbjörn Säll",
+      "Svante Holm",
+      "Caroline Dean",
+      "Martin Howard"
+    ],
+    "keywords": [
+      "Journal-Article"
+    ],
+    "sortKey": 201811
+  },
+  {
+    "key": "hepworth_2018",
+    "type": "article",
+    "title": "Absence of warmth permits epigenetic memory of winter in Arabidopsis",
+    "year": 2018,
+    "month": "Feb",
+    "abstract": "Plants integrate widely fluctuating temperatures to monitor seasonal progression. Here, we \r\ninvestigate the temperature signals in field conditions that result in vernalisation, the mechanism by \r\nwhich flowering is aligned with spring. We find that multiple, distinct aspects of the temperature profile \r\ncontribute to vernalisation. In autumn, transient cold temperatures promote transcriptional shutdown of \r\nArabidopsis FLOWERING LOCUS C (FLC), independently of factors conferring epigenetic memory. As winter \r\ncontinues, expression of VERNALIZATION INSENSITIVE3 (VIN3), a factor needed for epigenetic silencing, is \r\nupregulated by at least two independent thermosensory processes. One integrates long-term cold temperatures, \r\nwhile the other requires the absence of daily temperatures above 15°C. The lack of spikes of high \r\ntemperature, not just prolonged cold, is thus the major driver for vernalisation. Monitoring of peak daily \r\ntemperature is an effective mechanism to judge seasonal progression, but is likely to have deleterious \r\nconsequences for vernalisation as the climate becomes more variable.",
+    "journal": "Nature Communications",
+    "volume": "9",
+    "pages": "639",
+    "authors": [
+      "Jo Hepworth\\*",
+      "Rea L Antoniou-Kourounioti\\*",
+      "Rebecca H Bloomer",
+      "Catja Selga",
+      "Kristina Berggren",
+      "Deborah Cox",
+      "Barley R Collier Harris",
+      "Judith A Irwin",
+      "Svante Holm",
+      "Torbjörn Säll",
+      "Martin Howard",
+      "Caroline Dean"
+    ],
+    "keywords": [
+      "Journal-Article"
+    ],
+    "sortKey": 201802
+  },
+  {
+    "key": "antoniou-kourounioti_2017",
+    "type": "inbook",
+    "title": "Epigenetics and Systems Biology",
+    "year": "2017",
+    "month": "Dec",
+    "abstract": "Cold temperature is an environmental signal that can quantitatively determine the \r\nexpression levels of the plant flowering regulator, Flowering Locus C (FLC), weeks or months \r\nafter the cold signal itself has gone, a classic example of quantitative epigenetics. A close \r\ncollaboration between mathematical modelers and biologists has significantly elucidated the mechanisms \r\nbehind this long-term quantitative epigenetic regulation. This work has demonstrated that cold memory \r\nis held independently at each FLC gene copy in an all-or-nothing digital fashion. This memory is likely \r\nstored, at least in part, by high levels of histone H3 lysine 27 trimethylation (H3K27me3), a silencing \r\nhistone modification. The fraction of digitally ON versus OFF loci gives the graded FLC levels observed \r\nat a population level. Modeling has also predicted the need for antagonism between activating and \r\nsilencing histone modifications, a feature which has recently been confirmed experimentally.",
+    "editor": "Leonie Ringrose",
+    "chapter": "Quantitative Environmentally Triggered Switching Between Stable Epigenetic States",
+    "publisher": "Academic Press",
+    "authors": [
+      "Rea L Antoniou-Kourounioti",
+      "Martin Howard"
+    ],
+    "keywords": [
+      "Book-Chapter"
+    ],
+    "sortKey": 201712
+  },
+  {
+    "key": "photocat",
+    "type": "article",
+    "title": "Photocatalytic conversion of CO₂ to hydrocarbons by light-harvesting complex assisted Rh-doped TiO₂ photocatalyst",
+    "year": "2014",
+    "month": "Mar",
+    "abstract": "Photocatalytic reduction of CO₂ into valuable hydrocarbons using TiO₂ is a promising route \r\nfor mitigating the effects of global warming and meeting future energy demands. However, TiO₂ utilises UV \r\nlight for photocatalysis and its hydrocarbon yields are still low. In order to enhance the light absorption \r\nand increase yields, light-harvesting complexes (LHCII) extracted from spinach were attached to the surface \r\nof Rh-doped TiO₂ (TiO₂:Rh) resulting in a hybrid catalyst, TiO₂:Rh-LHCII. The LHCII can absorb visible light \r\nin green plants, which convert CO₂ to sugars via photosynthesis. CO, acetaldehyde and methyl formate \r\nwere produced from aqueous CO₂ solution in a stirred batch reactor under visible-light irradiation. \r\nThe yields of acetaldehyde and methyl formate were enhanced by almost ten and four times respectively, when \r\nusing TiO₂:Rh-LHCII compared to those of TiO₂:Rh.",
+    "journal": "Journal of CO₂ Utilization",
+    "volume": "5",
+    "pages": "33–40",
+    "authors": [
+      "Chien-Wei Lee\\*",
+      "Rea L Antoniou-Kourounioti\\*",
+      "Jeffrey C.S. Wu",
+      "Erik Murchie",
+      "Mercedes Maroto-Valer",
+      "Oliver Jensen",
+      "Chao Wei Huang",
+      "Alexander Ruban"
+    ],
+    "keywords": [
+      "Journal-Article"
+    ],
+    "sortKey": 201403
+  },
+  {
+    "key": "buckling",
+    "type": "article",
+    "title": "Buckling as an origin of ordered cuticular patterns in flower petals",
+    "year": "2013",
+    "month": "Mar",
+    "abstract": "The optical properties of plant surfaces are strongly determined by the shape of epidermal \r\ncells and by the patterning of the cuticle on top of the cells. Combinations of particular cell shapes with \r\nparticular nanoscale structures can generate a wide range of optical effects. Perhaps most notably, the \r\ndevelopment of ordered ridges of cuticle on top of flat petal cells can produce diffraction-grating-like \r\nstructures. A diffraction grating is one of a number of mechanisms known to produce ‘structural colours’, \r\nwhich are more intense and pure than chemical colours and can appear iridescent. We explore the concept that \r\nmechanical buckling of the cuticle on the petal epidermis might explain the formation of cuticular ridges, \r\nusing a theoretical model that accounts for the development of compressive stresses in the cuticle arising \r\nfrom competition between anisotropic expansion of epidermal cells and isotropic cuticle production. Model \r\npredictions rationalize cuticle patterns, including those with long-range order having the potential to \r\ngenerate iridescence, for a range of different flower species.",
+    "journal": "Journal of The Royal Society Interface",
+    "volume": "10",
+    "pages": "20120847",
+    "authors": [
+      "Rea L Antoniou-Kourounioti",
+      "Leah R Band",
+      "John Fozard",
+      "Anthony Hampstead",
+      "Anna Lovrics",
+      "Edwige Moyroud",
+      "Silvia Vignolini",
+      "John R King",
+      "Oliver Jensen",
+      "Beverley J Glover"
+    ],
+    "keywords": [
+      "Journal-Article"
+    ],
+    "sortKey": 201303
+  }
+]
