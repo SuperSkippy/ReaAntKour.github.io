@@ -21,7 +21,8 @@ function Bottom() {
             Norwich Research Park<br/>
             Norwich NR4 7UH, United Kingdom<br/>
             Contact: rea.antoniou-kourounioti@jic.ac.uk<br/>
-            <small>Page Last Updated: {preval`module.exports = new Date().toLocaleString();`}</small>
+            <small>Page Last Updated: {preval`module.exports = new Date().toLocaleString();`}</small><br/>
+            Website designed based on the Academic Research Website Template by Phillip M Johnson: <a href='https://github.com/csdl/csdl.github.io'> https://github.com/csdl/csdl.github.io</a>
           </p>
           </Row>
         </Container>

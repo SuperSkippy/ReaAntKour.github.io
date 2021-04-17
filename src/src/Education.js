@@ -21,7 +21,7 @@ const educationData = new EducationData();
   };
 
   return (
-    <div style={props.sectionStyle} id="papers">
+    <div style={props.sectionStyle} id="education">
       <Container>
         <Title title={'Education'} selectColor="darkYellow"/>
         {renderAll()}

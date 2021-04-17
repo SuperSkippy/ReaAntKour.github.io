@@ -14,11 +14,10 @@ function Top() {
       <Navbar style={navbarStyle}>
         <Container className="justify-content-center">
           <Nav>
-            <Nav.Item><Nav.Link href="#news" style={navbarStyle}>News</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link href="#research" style={navbarStyle}>Research</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="#workExperience" style={navbarStyle}>Post-doc Experience</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="#education" style={navbarStyle}>Education</Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link href="#papers" style={navbarStyle}>Papers</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link href="#members" style={navbarStyle}>Members</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link href="#sponsors" style={navbarStyle}>Sponsors</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="#conferences" style={navbarStyle}>Conferences and Seminars</Nav.Link></Nav.Item>
           </Nav>
         </Container>
       </Navbar>

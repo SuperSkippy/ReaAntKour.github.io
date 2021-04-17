@@ -23,7 +23,7 @@ const workExperienceData = new WorkExperienceData();
   };
 
   return (
-    <div style={props.sectionStyle} id="papers">
+    <div style={props.sectionStyle} id="workExperience">
       <Container>
         <Title title={'Post-doc Experience'} selectColor="lightBlue"/>
         <p style={{ fontWeight: 500, textAlign: 'center' }}>Current position: Postdoctoral Scientist, August 2014-present</p>
