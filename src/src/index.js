@@ -24,7 +24,7 @@ const sectionStyle3 = { paddingTop: '1em', paddingBottom: '5em' };
  */
 ReactDOM.render(
   <React.StrictMode>
-    <Home sectionStyle={sectionStyle3}/>
+    <Home sectionStyle={sectionStyle}/>
     <Top/>
     <WorkExperience sectionStyle={sectionStyle2}/>
     <Education sectionStyle={sectionStyle2}/>
