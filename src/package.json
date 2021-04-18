@@ -1,7 +1,7 @@
 {
-  "name": "csdl.github.io",
+  "name": "reaantkour.github.io",
   "version": "1.0.0",
-  "homepage": "https://csdl.github.io",
+  "homepage": "https://reaantkour.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

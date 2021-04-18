@@ -21,6 +21,7 @@ class WorkExperienceData {
             "contributors": [
             "Anis Meschichi",
             "Svenja Reeck",
+            "Matthew Hartley",
             "Stefanie Rosa",
             "Caroline Dean",
             "Martin Howard"
