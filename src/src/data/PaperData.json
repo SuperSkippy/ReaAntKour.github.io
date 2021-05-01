@@ -19,7 +19,8 @@
     "keywords": [
       "Journal-Article"
     ],
-    "sortKey": 202101
+    "sortKey": 202101,
+    "selected": 0
   },
   {
     "key": "jarad_2020",
@@ -41,7 +42,8 @@
     "keywords": [
       "Journal-Article"
     ],
-    "sortKey": 202010
+    "sortKey": 202010,
+    "selected": 0
   },
   {
     "key": "hepworth_2020",
@@ -72,7 +74,8 @@
     "keywords": [
       "Journal-Article"
     ],
-    "sortKey": 202009
+    "sortKey": 202009,
+    "selected": 0
   },
   {
     "key": "zhao_2020",
@@ -95,7 +98,8 @@
     "keywords": [
       "Journal-Article"
     ],
-    "sortKey": 202007
+    "sortKey": 202007,
+    "selected": 1
   },
   {
     "key": "hepworth2020preprint",
@@ -124,7 +128,8 @@
     "keywords": [
       "Journal-Article"
     ],
-    "sortKey": 202004
+    "sortKey": 202004,
+    "selected": 0
   },
   {
     "key": "questa_2020",
@@ -150,7 +155,8 @@
     "keywords": [
       "Journal-Article"
     ],
-    "sortKey": 202001
+    "sortKey": 202001,
+    "selected": 1
   },
   {
     "key": "antoniou-kourounioti_2018",
@@ -178,7 +184,8 @@
     "keywords": [
       "Journal-Article"
     ],
-    "sortKey": 201811
+    "sortKey": 201811,
+    "selected": 1
   },
   {
     "key": "hepworth_2018",
@@ -208,7 +215,8 @@
     "keywords": [
       "Journal-Article"
     ],
-    "sortKey": 201802
+    "sortKey": 201802,
+    "selected": 0
   },
   {
     "key": "antoniou-kourounioti_2017",
@@ -228,7 +236,8 @@
     "keywords": [
       "Book-Chapter"
     ],
-    "sortKey": 201712
+    "sortKey": 201712,
+    "selected": 0
   },
   {
     "key": "photocat",
@@ -254,7 +263,8 @@
     "keywords": [
       "Journal-Article"
     ],
-    "sortKey": 201403
+    "sortKey": 201403,
+    "selected": 0
   },
   {
     "key": "buckling",
@@ -282,6 +292,7 @@
     "keywords": [
       "Journal-Article"
     ],
-    "sortKey": 201303
+    "sortKey": 201303,
+    "selected": 0
   }
 ]

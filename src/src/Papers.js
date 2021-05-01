@@ -13,16 +13,25 @@ import PaperCard from './PaperCard';
  * When toggling to 'All', display all Papers.
  */
 function Papers(props) {
-  const [display, setDisplay] = useState('recent');
+  const [display, setDisplay] = useState('selected');
   const techreports = new TechReports();
 
   const onClickSectionButton = (pushedButton) => {
-    if (pushedButton === 'recent') {
-      setDisplay('recent');
+    if (pushedButton === 'selected') {
+      setDisplay('selected');
     } else
       if (pushedButton === 'all') {
         setDisplay('all');
       }
+  };
+
+  const renderSelected = () => {
+    const keys = techreports.getSelectedKeys();
+    return (
+      <div>
+        {_.map(keys, (key, idx) => <PaperCard key={idx} entry={techreports.getEntry(key)}/>)}
+      </div>
+    );
   };
 
   const renderRecent = () => {
@@ -48,12 +57,13 @@ function Papers(props) {
       <Container>
         <Title title={'Papers'} selectColor="lightBlue"/>
         <SectionToggle onClick={onClickSectionButton} total={techreports.total()}  selectColor="darkBlue"/>
-        {display === 'recent' ? renderRecent() : renderAll()}
+        {display === 'selected' ? renderSelected() : renderAll()}
         <p>* joint first authors, †joint corresponding authors</p>
       </Container>
     </div>
   );
 }
+//{display === 'recent' ? renderRecent() : renderAll()}
 
 Papers.propTypes = {
   sectionStyle: PropTypes.object.isRequired,

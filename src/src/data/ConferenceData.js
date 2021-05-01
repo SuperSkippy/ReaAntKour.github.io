@@ -14,6 +14,12 @@ class ConferenceData {
     /* Return the three most recent entries. */
     getRecentKeys = () => this.getKeys().slice(0, 3);
   
+    /* Return a list of selected entry keys. */
+    getSelectedKeys = () => {
+        const entries = this.getSortedEntries(this.data);
+        return this.extractKey(_.filter(entries, entry => entry.selected === 1));
+    }
+
     /* Return a list of all entry keys sorted by date and with the associated type. If no type provided, return all entry keys. */
     getKeys = (type) => {
         const entries = this.getSortedEntries(this.data);
@@ -108,11 +114,25 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 2106
+            "sortKey": 2106,
+            "selected": 1
+        },
+        {
+            "key": "u2105",
+            "type": "Upcoming",
+            "title": "How plants use their growth rate to measure long-term temperature",
+            "year": "2021",
+            "location": "Invited seminar in Plantastic monthly seminar series at the Centre for Plant Sciences, University of Leeds",
+            "dates": "18 May 2021",
+            "keywords": [
+                "Seminar"
+            ],
+            "sortKey": 2105,
+            "selected": 0
         },
         {
             "key": "u2104",
-            "type": "Upcoming",
+            "type": "Invited",
             "title": "Breaking winter into “Bits”: how plants sense the cold",
             "year": "2021",
             "location": "Invited seminar at the Linnean Centre Plant Science Frontiers Seminars",
@@ -120,20 +140,9 @@ class ConferenceData {
             "keywords": [
                 "Seminar"
             ],
-            "sortKey": 2104
+            "sortKey": 2104,
+            "selected": 1
         },
-        /*{
-            "key": "u2105",
-            "type": "Upcoming",
-            "title": "TBA",
-            "year": "2021",
-            "location": "Invited seminar in Plantastic monthly seminar series at the Centre for Plant Sciences, University of Leeds",
-            "dates": "18 May 2021",
-            "keywords": [
-                "Seminar"
-            ],
-            "sortKey": 2105
-        },*/
         {
             "key": "i2010",
             "type": "Invited",
@@ -144,7 +153,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 2010
+            "sortKey": 2010,
+            "selected": 1
         },
         {
             "key": "i2005",
@@ -157,7 +167,8 @@ class ConferenceData {
             "keywords": [
                 "Seminar"
             ],
-            "sortKey": 2005
+            "sortKey": 2005,
+            "selected": 0
         },
         {
             "key": "o2010",
@@ -169,7 +180,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 2010
+            "sortKey": 2010,
+            "selected": 0
         },
         {
             "key": "o1912",
@@ -181,7 +193,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1912
+            "sortKey": 1912,
+            "selected": 0
         },
         {
             "key": "o1911",
@@ -193,7 +206,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1911
+            "sortKey": 1911,
+            "selected": 0
         },
         {
             "key": "o1909",
@@ -205,7 +219,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1909
+            "sortKey": 1909,
+            "selected": 0
         },
         {
             "key": "o1804",
@@ -217,7 +232,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1804
+            "sortKey": 1804,
+            "selected": 0
         },
         {
             "key": "o1707",
@@ -229,7 +245,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1707
+            "sortKey": 1707,
+            "selected": 0
         },
         {
             "key": "o1712",
@@ -241,7 +258,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1712
+            "sortKey": 1712,
+            "selected": 0
         },
         {
             "key": "o1607",
@@ -253,7 +271,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1607
+            "sortKey": 1607,
+            "selected": 0
         },
         {
             "key": "o1610",
@@ -265,7 +284,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1610
+            "sortKey": 1610,
+            "selected": 0
         },
         {
             "key": "o1506",
@@ -277,7 +297,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1506
+            "sortKey": 1506,
+            "selected": 0
         },
         {
             "key": "o1106",
@@ -289,7 +310,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1106
+            "sortKey": 1106,
+            "selected": 0
         },
         {
             "key": "o1007",
@@ -301,7 +323,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1007
+            "sortKey": 1007,
+            "selected": 0
         },
         {
             "key": "po1910",
@@ -313,7 +336,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1910
+            "sortKey": 1910,
+            "selected": 0
         },
         {
             "key": "po1908",
@@ -325,7 +349,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1908
+            "sortKey": 1908,
+            "selected": 0
         },
         {
             "key": "po1811",
@@ -337,7 +362,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1811
+            "sortKey": 1811,
+            "selected": 0
         },
         {
             "key": "po1309",
@@ -349,7 +375,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1309
+            "sortKey": 1309,
+            "selected": 0
         },
         {
             "key": "po1109",
@@ -361,7 +388,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1109
+            "sortKey": 1109,
+            "selected": 0
         },
         {
             "key": "po1105",
@@ -373,7 +401,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1105
+            "sortKey": 1105,
+            "selected": 0
         },
         {
             "key": "po1104",
@@ -385,7 +414,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1104
+            "sortKey": 1104,
+            "selected": 0
         },
         {
             "key": "pa1801",
@@ -396,7 +426,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1801
+            "sortKey": 1801,
+            "selected": 0
         },
         {
             "key": "pa1201",
@@ -407,7 +438,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1201
+            "sortKey": 1201,
+            "selected": 0
         },
         {
             "key": "pa1103",
@@ -418,7 +450,8 @@ class ConferenceData {
             "keywords": [
                 "Conference"
             ],
-            "sortKey": 1103
+            "sortKey": 1103,
+            "selected": 0
         }
     ]
     

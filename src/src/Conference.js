@@ -13,20 +13,20 @@ import ConferenceForm from './ConferenceForm';
  * When toggling to 'All', display a form rather than immediately displaying all of the Conferences.
  */
 function Conferences(props) {
-  const [display, setDisplay] = useState('recent');
+  const [display, setDisplay] = useState('selected');
   const conferenceData = new ConferenceData();
 
   const onClickSectionButton = (pushedButton) => {
-    if (pushedButton === 'recent') {
-      setDisplay('recent');
+    if (pushedButton === 'selected') {
+      setDisplay('selected');
     } else
       if (pushedButton === 'all') {
         setDisplay('all');
       }
   };
 
-  const renderRecent = () => {
-    const keys = conferenceData.getRecentKeys();
+  const renderSelected = () => {
+    const keys = conferenceData.getSelectedKeys();
     return (
       <div>
         {_.map(keys, (key, idx) => <ConferenceCard key={idx} entry={conferenceData.getEntry(key)}/>)}
@@ -48,7 +48,7 @@ function Conferences(props) {
       <Container>
         <Title title={'Conferences and Seminars'} selectColor="darkYellow"/>
         <SectionToggle onClick={onClickSectionButton} total={conferenceData.total()} selectColor="darkYellow"/>
-        {display === 'recent' ? renderRecent() : <ConferenceForm/>}
+        {display === 'selected' ? renderSelected() : <ConferenceForm/>}
       </Container>
     </div>
   );

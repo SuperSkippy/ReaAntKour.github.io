@@ -18,6 +18,11 @@ class TechReports {
   /* Return the three most recent entries. */
   getRecentKeys = () => this.getKeys().slice(0, 3);
 
+  /* Return a list of selected entry keys. */
+  getSelectedKeys = () => {
+    return this.extractKey(_.filter(paperData, entry => entry.selected === 1));
+  }
+  
   /* Return a list of all BibTex entry types (i.e. 'phdthesis', 'article', etc.) */
   getTypes = () => {
     const types = [];

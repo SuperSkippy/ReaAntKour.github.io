@@ -14,15 +14,14 @@ function Bottom() {
     <div style={bottomStyle}>
         <Container>
           <Row className="justify-content-center">
-          <p>Work Address<br/>
-            Dr Rea Antoniou-Kourounioti<br/>
+          <p>Dr Rea Antoniou-Kourounioti<br/>
             Computational and Systems Biology<br/>
             John Innes Centre<br/>
             Norwich Research Park<br/>
             Norwich NR4 7UH, United Kingdom<br/>
             Contact: rea.antoniou-kourounioti@jic.ac.uk<br/>
             <small>Page Last Updated: {preval`module.exports = new Date().toLocaleString();`}</small><br/>
-            Website designed based on the Academic Research Website Template by Phillip M Johnson: <a href='https://github.com/csdl/csdl.github.io'> https://github.com/csdl/csdl.github.io</a>
+            <small>Website designed based on the Academic Research Website Template by Phillip M Johnson: <a href='https://github.com/csdl/csdl.github.io'> https://github.com/csdl/csdl.github.io</a></small>
           </p>
           </Row>
         </Container>

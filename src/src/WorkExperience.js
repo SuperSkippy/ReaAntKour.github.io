@@ -27,7 +27,7 @@ const workExperienceData = new WorkExperienceData();
       <Container>
         <Title title={'Post-doc Experience'} selectColor="lightBlue"/>
         <p style={{ fontWeight: 500, textAlign: 'center' }}>Current position: Postdoctoral Scientist, August 2014-present</p>
-        <p style={{ fontSize: 25, fontWeight: 700, textAlign: 'center', color: ColorCode.darkBlue }}>John Innes Centre</p>
+        <p style={{ fontSize: 25, fontWeight: 700, textAlign: 'center', color: ColorCode.darkBlue }}><a href='https://www.jic.ac.uk/people/rea-l-antoniou-kourounioti/'>John Innes Centre</a></p>
         <p style={{ textAlign: 'center' }}>In the groups of <a href='https://www.jic.ac.uk/people/martin-howard/'> Prof Martin Howard</a> and <a href='https://www.jic.ac.uk/people/caroline-dean/'> Prof Dame Caroline Dean</a> </p>
         <p style={{ textAlign: 'center' }}></p>
         {renderAll()}
