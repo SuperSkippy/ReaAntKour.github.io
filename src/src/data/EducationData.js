@@ -22,11 +22,11 @@ class WorkExperienceData {
             "area":"Interdisciplinary research combining Biology, Mathematics and Chemical Engineering",
             "thesisTitle": "LHCII-assisted TiO2 photocatalysis of CO2 to small organic compounds.",
             "supervisors": [
-                "Prof. E. Murchie (Biosciences, Nottingham)", 
-                "Prof. O. Jensen (Applied Math., Manchester)", 
-                "Prof. A. Ruban (Biophysics, London)", 
-                "Prof. J. Wattis (Applied Math., Nottingham)", 
-                "Prof. M. Maroto-Valer (Chemical Eng., Edinburgh)"
+                "Prof. E. Murchie", 
+                "Prof. O. Jensen", 
+                "Prof. A. Ruban", 
+                "Prof. J. Wattis", 
+                "Prof. M. Maroto-Valer"
             ],
             "result": "Awarded 20th January 2014",
             "vivaDate":"Viva: 17th December 2013",
@@ -34,6 +34,8 @@ class WorkExperienceData {
             "keywords": [
             "Journal-Article"
             ],
+            "logo": "images/UoN.png",
+            "link": "https://www.nottingham.ac.uk/",
             "sortKey": 2014
         },
         {
@@ -47,6 +49,8 @@ class WorkExperienceData {
             "keywords": [
             "Journal-Article"
             ],
+            "logo": "images/UoC.png",
+            "link": "http://math.uoc.gr/en/",
             "sortKey": 2009
         },
         {
@@ -61,6 +65,8 @@ class WorkExperienceData {
             "keywords": [
             "Journal-Article"
             ],
+            "logo": "images/imperial_college.png",
+            "link": "https://www.imperial.ac.uk/",
             "sortKey": 2008
         }
     ]

@@ -25,17 +25,16 @@ const workExperienceData = new WorkExperienceData();
   return (
     <div style={props.sectionStyle} id="workExperience">
       <Container>
-        <Title title={'Post-doc Experience'} selectColor="lightBlue"/>
-        <p style={{ fontWeight: 500, textAlign: 'center' }}>Current position: Postdoctoral Scientist, August 2014-present</p>
-        <p style={{ fontSize: 25, fontWeight: 700, textAlign: 'center', color: ColorCode.darkBlue }}><a href='https://www.jic.ac.uk/people/rea-l-antoniou-kourounioti/'>John Innes Centre</a></p>
-        <p style={{ textAlign: 'center' }}>In the groups of <a href='https://www.jic.ac.uk/people/martin-howard/'> Prof Martin Howard</a> and <a href='https://www.jic.ac.uk/people/caroline-dean/'> Prof Dame Caroline Dean</a> </p>
-        <p style={{ textAlign: 'center' }}></p>
+        <Title title={'Research Experience'} selectColor="darkBlue"/>
         {renderAll()}
       </Container>
     </div>
   );
 }
+//<p style={{ fontWeight: 500, textAlign: 'center' }}>Current position: Postdoctoral Scientist, August 2014-present</p>
+//<p style={{ fontSize: 25, fontWeight: 700, textAlign: 'center', color: ColorCode.darkBlue }}><a href='https://www.jic.ac.uk/people/rea-l-antoniou-kourounioti/'>John Innes Centre</a></p>
 //<p style={{ textAlign: 'center' }}>Department of Computational and Systems Biology,</p>
+//<p style={{ textAlign: 'center' }}>In the groups of <a href='https://www.jic.ac.uk/people/martin-howard/'> Prof Martin Howard</a> and <a href='https://www.jic.ac.uk/people/caroline-dean/'> Prof Dame Caroline Dean</a> </p>
 //<Image src={'/images/people/martin_howard.jpg'}/>
 //<Image src={'/images/people/caroline_dean.jpg'}/>
         

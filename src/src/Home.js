@@ -27,10 +27,11 @@ const total = dollar.format(_.reduce(sponsorFundingList, (sum, n) => sum + n, 0)
 
 /* Markdown for Home section text. */
 const homeText = `
-Dr Rea L Antoniou-Kourounioti works at the interface of plant science and mathematical modelling to understand how plants sense temperature to control their development.
-
+*WRITE MORE HERE*
+I work at the interface of plant science and mathematical modelling to understand how plants sense temperature to control their development.
+*add email here*
 `;
-// She is a Post-Doc in the groups of [Prof Martin Howard](https://www.jic.ac.uk/people/martin-howard/) and [Prof Dame Caroline Dean](https://www.jic.ac.uk/people/caroline-dean/) at the [John Innes Centre](https://www.jic.ac.uk/).
+// Dr Rea L Antoniou-Kourounioti is a Post-Doc in the groups of [Prof Martin Howard](https://www.jic.ac.uk/people/martin-howard/) and [Prof Dame Caroline Dean](https://www.jic.ac.uk/people/caroline-dean/) at the [John Innes Centre](https://www.jic.ac.uk/).
 //Rea has published ${journal} journal articles and ${chapter} book-chapter.
 
 const renderDeck = (deckNum) => {

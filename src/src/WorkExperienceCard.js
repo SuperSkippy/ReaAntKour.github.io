@@ -9,11 +9,78 @@ import { ColorCode } from './Constants';
  * The following functions take an entry object and format it for a particular type of publication.
  * If your bibtex file has other types (booklet, manual, etc) then you'll have to add it here.
  */
-const formatProject = entry => `${entry.contributors.join(', ')},  **${entry.title}**. ${entry.year}  ${(entry.note) ? `, ([pdf](${entry.note}))` : ''}`;
+
+const formatTitle = entry => `${entry.title}  
+------`;
+
+const formatPhDProjectAbove = entry => `**${entry.year}**  
+    ${entry.area}  
+    ${entry.location}`;
+
+const formatProjectAbove = entry => `**${entry.year}**  
+    ${entry.area}  
+    ${entry.location}`;
+
+
+
+/*
+    
+${entry.abstract}  
+  
+Supervisors: ${entry.supervisors.join(', ')}  
+  
+${entry.vivaDate}  
+  
+${entry.result}`;*/
+
+
+/* Make it easy to get the format function from the document type. */
+const formatAboveMap = {
+  postdoc: formatProjectAbove,
+  phd: formatPhDProjectAbove,
+};
+
+const formatProject = entry => {
+  return (
+    <div>
+    <a href={entry.collaboratorLink1}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-right'} width='200px' src={entry.collaboratorLogo1}/> </a>
+    {entry.collaboratorLogo2 ? <a href={entry.collaboratorLink2}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-right'} width='200px' src={entry.collaboratorLogo2}/> </a> : ""}
+    <Markdown>
+      {`${entry.supervisors}  
+      **Collaborators:** ${entry.contributors.join(', ')}  `}
+    </Markdown>
+    <Markdown>
+      {`${entry.abstract}`}
+    </Markdown>
+    <a href={entry.funderLink}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-right'} width='200px' src={entry.funderLogo}/> </a>
+    {entry.videoImage ? <a href={entry.videoLink}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-left'} width='250px' src={entry.videoImage}/> </a> : ""}
+    </div>
+  );
+};
+
+const formatPhDProject = entry =>  {
+  return (
+    <div>
+      <a href={entry.collaboratorLink1}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-right'} width='200px' src={entry.collaboratorLogo1}/> </a>
+      {entry.collaboratorLogo2 ? <a href={entry.collaboratorLink2}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-right'} width='200px' src={entry.collaboratorLogo2}/> </a> : ""}
+      <Markdown>
+        {`  **Title: ${entry.thesisTitle}**  
+        **Supervisors:** ${entry.supervisors.join(', ')}`}
+      </Markdown>
+      <Markdown>
+        {`**Collaborators:** ${entry.collaborators.join(', ')}`}
+      </Markdown>
+      <Markdown>
+        {`${entry.abstract}`}
+      </Markdown>
+    </div>
+  );
+};
 
 /* Make it easy to get the format function from the document type. */
 const formatMap = {
   postdoc: formatProject,
+  phd: formatPhDProject,
 };
 
 /**
@@ -26,15 +93,19 @@ function WorkExperienceCard(props) {
     <Accordion>
       <Card style={cardStyle}>
         <Accordion.Toggle as={Card.Header} eventKey="0">
+          <a href={props.entry.link}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-right'} width='200px' src={props.entry.logo}/> </a>
+          <a href={props.entry.imageLink}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-left'} width='200px' src={props.entry.image}/> </a>
           <Markdown>
-            {`${props.entry.title}`}
+            {formatTitle(props.entry)}
+          </Markdown>
+          <Markdown>
+            {formatAboveMap[props.entry.type](props.entry)}
           </Markdown>
           More ˅
         </Accordion.Toggle>
         <Accordion.Collapse eventKey="0">
             <Card.Body>
-                <p>Collaborators: {`${props.entry.contributors.join(', ')}`}</p>
-                <p>{`${props.entry.abstract}`}</p>
+              {formatMap[props.entry.type](props.entry)}
             </Card.Body>
         </Accordion.Collapse>
       </Card>

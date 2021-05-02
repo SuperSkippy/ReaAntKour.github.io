@@ -9,16 +9,23 @@ import { ColorCode } from './Constants';
  * The following functions take an entry object and format it for a particular type of publication.
  * If your bibtex file has other types (booklet, manual, etc) then you'll have to add it here.
  */
+
+const formatTitle = entry => `${entry.title}  
+------`;
+
 const formatPHD = entry => `**${entry.year}**  
-    ${entry.title}  
-    ${entry.location}  
-Topic: ${entry.topic}`;
+    ${entry.location}`;
+//Topic: ${entry.topic}`;
 
 const formatDegree = entry => `**${entry.year}**  
-    ${entry.title}  
     ${entry.location}`;
 
-const formatPHDmore = entry => `**Title: ${entry.thesisTitle}**  
+const formatPHDmore = entry => `${entry.result}  
+${entry.vivaDate}  
+
+Supervisors: ${entry.supervisors.join(', ')}`;
+
+/*const formatPHDmore = entry => `**Title: ${entry.thesisTitle}**  
   
 ${entry.area}  
   
@@ -28,7 +35,7 @@ Supervisors: ${entry.supervisors.join(', ')}
   
 ${entry.vivaDate}  
   
-${entry.result}`;
+${entry.result}`;*/
 
 const formatDegreeMore = entry => `${entry.result}  
   
@@ -55,6 +62,26 @@ const formatBelowMap = {
 function WorkExperienceCard(props) {
   const cardStyle = { backgroundColor: `${ColorCode.vlightYellow}`, border: `1px solid ${ColorCode.darkYellow}`, marginBottom: '10px' };
   return (
+      <Card style={cardStyle}>
+        <Card.Body>
+          <Markdown>
+            {formatTitle(props.entry)}
+          </Markdown>
+          <Markdown>
+            {formatAboveMap[props.entry.type](props.entry)}
+          </Markdown>
+          <Markdown>
+            {formatBelowMap[props.entry.type](props.entry)}
+          </Markdown>
+        </Card.Body>
+        <a href={props.entry.link}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-left'} width='200px' src={props.entry.logo}/> </a>
+      </Card>
+  );
+}
+
+/*function WorkExperienceCard(props) {
+  const cardStyle = { backgroundColor: `${ColorCode.vlightYellow}`, border: `1px solid ${ColorCode.darkYellow}`, marginBottom: '10px' };
+  return (
     <Accordion>
       <Card style={cardStyle}>
         <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -73,7 +100,7 @@ function WorkExperienceCard(props) {
       </Card>
     </Accordion>
   );
-}
+}*/
 //{`${props.entry.contributors.join(', ')} \n ${props.entry.abstract}`}
 //<p style={{ textAlign: 'center' }}> More <span class="glyphicon glyphicon-chevron-down"></span></p>
 

@@ -12,8 +12,52 @@ class ConferenceData {
     extractKey = entries => _.map(entries, entry => entry.key);
 
     /* Return the three most recent entries. */
-    getRecentKeys = () => this.getKeys().slice(0, 3);
-  
+    //getRecentKeys = () => this.getKeys().slice(0, 3);
+    
+    /* Return entries since 2018. */
+    getRecentKeys = () => {
+        const entries = this.getSortedEntries(this.data);
+        return this.extractKey(_.filter(entries, entry => (entry.year === "2021")||(entry.year === "2020")||(entry.year === "2019")||(entry.year === "2018")));
+    }
+
+    getRecentCount = () => {
+        const entries = this.getSortedEntries(this.data);
+        return this.extractKey(_.filter(entries, entry => (entry.year === "2021")||(entry.year === "2020")||(entry.year === "2019")||(entry.year === "2018"))).length;
+    }
+
+    /* Return Invited entries. */
+    getInvitedKeys = () => {
+        const entries = this.getSortedEntries(this.data);
+        return this.extractKey(_.filter(entries, entry => (entry.type === "Invited")));
+    }
+
+    getInvitedCount = () => {
+        const entries = this.getSortedEntries(this.data);
+        return this.extractKey(_.filter(entries, entry => (entry.type === "Invited"))).length;
+    }
+
+    /* Return Oral entries. */
+    getOralKeys = () => {
+        const entries = this.getSortedEntries(this.data);
+        return this.extractKey(_.filter(entries, entry => (entry.type === "Oral")||(entry.type === "Invited")));
+    }
+
+    getOralCount = () => {
+        const entries = this.getSortedEntries(this.data);
+        return this.extractKey(_.filter(entries, entry => (entry.type === "Oral")||(entry.type === "Invited"))).length;
+    }
+
+    /* Return Poster entries. */
+    getPosterKeys = () => {
+        const entries = this.getSortedEntries(this.data);
+        return this.extractKey(_.filter(entries, entry => (entry.type === "Poster")));
+    }
+
+    getPosterCount = () => {
+        const entries = this.getSortedEntries(this.data);
+        return this.extractKey(_.filter(entries, entry => (entry.type === "Poster"))).length;
+    }
+
     /* Return a list of selected entry keys. */
     getSelectedKeys = () => {
         const entries = this.getSortedEntries(this.data);
@@ -106,7 +150,7 @@ class ConferenceData {
     data = [
         {
             "key": "u2106",
-            "type": "Upcoming",
+            "type": "Invited",
             "title": "Seasonal time keeping in plants: Remembering winter to time flowering",
             "year": "2021",
             "location": "Invited speaker at 85th Cold Spring Harbor Laboratory Symposium on Quantitative Biology: Biological Time Keeping",
@@ -119,7 +163,7 @@ class ConferenceData {
         },
         {
             "key": "u2105",
-            "type": "Upcoming",
+            "type": "Invited",
             "title": "How plants use their growth rate to measure long-term temperature",
             "year": "2021",
             "location": "Invited seminar in Plantastic monthly seminar series at the Centre for Plant Sciences, University of Leeds",

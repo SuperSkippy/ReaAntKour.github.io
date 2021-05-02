@@ -20,9 +20,12 @@ function Papers(props) {
     if (pushedButton === 'selected') {
       setDisplay('selected');
     } else
-      if (pushedButton === 'all') {
-        setDisplay('all');
-      }
+      if (pushedButton === 'recent') {
+        setDisplay('recent');
+      } else
+        if (pushedButton === 'all') {
+          setDisplay('all');
+        }
   };
 
   const renderSelected = () => {
@@ -55,9 +58,9 @@ function Papers(props) {
   return (
     <div style={props.sectionStyle} id="papers">
       <Container>
-        <Title title={'Papers'} selectColor="lightBlue"/>
-        <SectionToggle onClick={onClickSectionButton} total={techreports.total()}  selectColor="darkBlue"/>
-        {display === 'selected' ? renderSelected() : renderAll()}
+        <Title title={'Papers'} selectColor="darkBlue"/>
+        <SectionToggle onClick={onClickSectionButton} total={techreports.total()} recentCount={techreports.getRecentCount()} selectColor="darkBlue"/>
+        {display === 'selected' ? renderSelected() : (display === 'recent' ? renderRecent() : renderAll())}
         <p>* joint first authors, †joint corresponding authors</p>
       </Container>
     </div>
