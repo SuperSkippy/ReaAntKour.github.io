@@ -15,7 +15,7 @@ class WorkExperienceData {
         {
             "key": "phd",
             "type": "phd",
-            "year": "2009-14",
+            "year": "2009-2014",
             "title": "PhD Research on Artificial Photosynthesis",
             "courseTitle": "PhD in Biosciences",
             "location": "University of Nottingham, UK",
@@ -38,8 +38,8 @@ class WorkExperienceData {
             "keywords": [
             "Journal-Article"
             ],
-            "image": "images/LHCII.png",
-            "imageLink": "https://www.sciencedirect.com/science/article/pii/S000527280900098X",
+            "image": "images/thesis_model.png",
+            "LHCIIimageLink": "https://www.sciencedirect.com/science/article/pii/S000527280900098X",
             "logo": "images/UoN.jpg",
             "link": "https://www.nottingham.ac.uk/",
             "collaboratorLogo1": "images/qmul.png",
@@ -84,7 +84,7 @@ class WorkExperienceData {
             "grantTitle": "Measurement of temperature exposure and integration over time (ERC funding)",
             "year": "2014-2018",
             "location": "John Innes Centre, UK",
-            "area":"Interdisciplinary research combining mathematical modelling and experimental plant biology",
+            "area":"Interdisciplinary research combining mathematical modelling with lab and field experiments",
             "abstract": "Recognising winter reliably is vital for plants to correctly time developmental transitions. The temperature sensing mechanism of this process is still poorly understood, with the prevailing idea being that one or a few specialised “thermosensors” collect the temperature information. I worked on an interdisciplinary project and developed a mathematical model that helped elucidate this mechanism, showing that multiple, distinct temperature inputs are necessary and implicated growth as a thermosensor. Together with collaborators (JIC, Lund and Sundsvall), I designed and carried out experiments that showed that plants sense the “absence of warmth” as the signature of winter. Our mathematical model had predictive power and I used it to predict the plant’s response in a climate warming scenario.",
             "supervisors": "In the groups of [Prof Martin Howard](https://www.jic.ac.uk/people/martin-howard/) and [Prof Dame Caroline Dean](https://www.jic.ac.uk/people/caroline-dean/)",
             "contributors": [
@@ -102,7 +102,7 @@ class WorkExperienceData {
             "Journal-Article"
             ],
             "image": "images/arabid_field.jpg",
-            "videoImage": "images/video_image.png",
+            "videoImage": "images/video_image.jpg",
             "videoLink": "https://www.youtube.com/watch?v=UB1Tr2A8jlc",
             "logo": "images/jic.jpg",
             "link": "https://www.jic.ac.uk/",

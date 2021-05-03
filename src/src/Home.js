@@ -42,7 +42,7 @@ const renderDeck = (deckNum) => {
         (<Col className="col-md-auto">
           <Card style={{ border: `1px solid ${ColorCode.background}`, marginRight: '0em', width: '230px' }}>
             <Card.Body>
-              <img alt='Media' style={{ marginRight: '1px' }} className={'rounded float-right'} width='200px' src={'images/Rea_2020.png'}/>
+              <img alt='Media' style={{ marginRight: '1px' }} className={'rounded float-right'} width='200px' src={'images/Rea_2020.jpg'}/>
             </Card.Body>
           </Card>
         </Col>

@@ -477,7 +477,7 @@ class ConferenceData {
             "key": "pa1201",
             "type": "Participation",
             "year": "2012",
-            "location": "Participated in the 5th Mathematics in the Plant Sciences Study Group, held at the University of Nottingham in 2012, which resulted in a publication",
+            "location": "Participated in the 5th Mathematics in the Plant Sciences Study Group, held at the University of Nottingham in 2012 (which resulted in a [publication](https://royalsocietypublishing.org/doi/10.1098/rsif.2012.0847))",
             "dates": "3-6 January 2012",
             "keywords": [
                 "Conference"

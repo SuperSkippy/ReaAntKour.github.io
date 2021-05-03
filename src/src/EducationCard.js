@@ -10,8 +10,16 @@ import { ColorCode } from './Constants';
  * If your bibtex file has other types (booklet, manual, etc) then you'll have to add it here.
  */
 
-const formatTitle = entry => `${entry.title}  
+const formatTitlePHD = entry => `${entry.title}  
 ------`;
+
+const formatTitleDegree = entry => `${entry.title}  
+------`;
+
+const formatTitle = {
+  phd: formatTitlePHD,
+  degree: formatTitleDegree
+};
 
 const formatPHD = entry => `**${entry.year}**  
     ${entry.location}`;
@@ -65,7 +73,7 @@ function WorkExperienceCard(props) {
       <Card style={cardStyle}>
         <Card.Body>
           <Markdown>
-            {formatTitle(props.entry)}
+            {formatTitle[props.entry.type](props.entry)}
           </Markdown>
           <Markdown>
             {formatAboveMap[props.entry.type](props.entry)}
@@ -74,7 +82,7 @@ function WorkExperienceCard(props) {
             {formatBelowMap[props.entry.type](props.entry)}
           </Markdown>
         </Card.Body>
-        <a href={props.entry.link}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-left'} width='200px' src={props.entry.logo}/> </a>
+        <a href={props.entry.link}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-left'} width='300px' src={props.entry.logo}/> </a>
       </Card>
   );
 }
