@@ -74,7 +74,7 @@ class WorkExperienceData {
             "link": "https://www.jic.ac.uk/",
             "collaboratorLogo1": "images/slu.png",
             "collaboratorLink1": "https://stefanierosa.wixsite.com/rosalab",
-            "funderLogo": "images/bbsrc.png",
+            "funderLogo": "images/BBSRC.png",
             "sortKey": 2021
         },
         {
@@ -108,7 +108,7 @@ class WorkExperienceData {
             "link": "https://www.jic.ac.uk/",
             "collaboratorLogo1": "images/midSwedenUni.png",
             "collaboratorLogo2": "images/lund.png",
-            "funderLogo": "images/erc.png",
+            "funderLogo": "images/ERC.png",
             "sortKey": 2018
         }
     ]
