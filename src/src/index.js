@@ -9,6 +9,7 @@ import News from './News';
 import Research from './Research';
 import Papers from './Papers';
 import Conference from './Conference';
+import ResearchInterests from './ResearchInterests';
 import WorkExperience from './WorkExperience';
 import Education from './Education';
 import Members from './Members';
@@ -26,6 +27,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Home sectionStyle={sectionStyle}/>
     <Top/>
+    <ResearchInterests sectionStyle={sectionStyle2}/>
     <WorkExperience sectionStyle={sectionStyle2}/>
     <Education sectionStyle={sectionStyle2}/>
     <Papers sectionStyle={sectionStyle2}/>

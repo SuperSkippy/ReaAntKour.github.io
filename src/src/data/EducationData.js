@@ -16,7 +16,7 @@ class WorkExperienceData {
             "key": "phd",
             "type": "phd",
             "year": "2009-14",
-            "title": "PhD              in Biosciences",
+            "title": "PhD in Biosciences",
             "location": "University of Nottingham, UK",
             "topic": "Artificial Photosynthesis",
             "area":"Interdisciplinary research combining Biology, Mathematics and Chemical Engineering",
