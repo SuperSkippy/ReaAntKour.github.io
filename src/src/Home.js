@@ -58,6 +58,7 @@ const renderDeck = (deckNum) => {
               <a href='https://www.linkedin.com/in/rea-laila-antoniou-kourounioti-8962047/'> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-center'} height='50px' src={'images/linkedin.png'}/> </a>
               <a href='https://www.researchgate.net/profile/Rea_Antoniou_Kourounioti'> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-center'} height='50px' src={'images/researchgate.png'}/> </a>
               <a href='https://publons.com/researcher/AAY-3284-2020/'> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-center'} height='50px' src={'images/publons.jpg'}/> </a>
+              <a href='https://github.com/ReaAntKour'> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-center'} height='50px' src={'images/github.jpg'}/> </a>
               <a href='mailto:Rea.Kourounioti@jic.ac.uk'> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-center'} height='50px' src={'images/envelope.png'}/> </a>
             </Card.Body>
           </Card>
