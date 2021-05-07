@@ -83,21 +83,35 @@ const formatMap = {
   phd: formatPhDProject,
 };
 
+/* Make it easy to get the colour from caller function. */
+const lightColour = {
+  blue: ColorCode.vlightBlue,
+  yellow: ColorCode.vlightYellow,
+};
+
+/* Make it easy to get the colour from caller function. */
+const darkColour = {
+  blue: ColorCode.darkBlue,
+  yellow: ColorCode.darkYellow,
+};
+
 /**
  * Display a WorkExperience, formatting appropriately for its type.
  * Clicking or tapping it will display its abstract.
  */
 function WorkExperienceCard(props) {
-  const cardStyle = { backgroundColor: `${ColorCode.vlightBlue}`, border: `1px solid ${ColorCode.darkBlue}`, marginBottom: '10px' };
+  const cardStyle = { backgroundColor: `${lightColour[props.selectColor]}`, border: `1px solid ${darkColour[props.selectColor]}`, marginBottom: '10px' };
   return (
     <Accordion>
       <Card style={cardStyle}>
         <Accordion.Toggle as={Card.Header} eventKey="0">
           <a href={props.entry.link}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-right'} width='200px' src={props.entry.logo}/> </a>
           <a href={props.entry.imageLink}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-left'} width='200px' src={props.entry.image}/> </a>
-          <Markdown>
-            {formatTitle(props.entry)}
-          </Markdown>
+          <Card style={{border: 'transparent', background: 'transparent', minWidth: '100px'}}>
+            <Markdown>
+              {formatTitle(props.entry)}
+            </Markdown>
+          </Card>
           <Markdown>
             {formatAboveMap[props.entry.type](props.entry)}
           </Markdown>

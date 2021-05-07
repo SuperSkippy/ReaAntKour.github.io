@@ -17,7 +17,7 @@ const educationData = new EducationData();
     const deckStyle = { marginBottom: '0em' };
   return (
     <CardDeck key={0} style={deckStyle}>
-      {_.map(keys, (key, idx) => <EducationCard key={idx} entry={educationData.getEntry(key)}/>)}
+      {_.map(keys, (key, idx) => <EducationCard key={idx} selectColor={props.themeColour} entry={educationData.getEntry(key)}/>)}
     </CardDeck>
     );
   };
@@ -25,7 +25,7 @@ const educationData = new EducationData();
   return (
     <div style={props.sectionStyle} id="education">
       <Container>
-        <Title title={'Education'} selectColor="darkYellow"/>
+        <Title title={'Education'} selectColor={props.titleColour}/>
         {renderAll()}
       </Container>
     </div>

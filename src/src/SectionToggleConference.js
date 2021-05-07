@@ -14,8 +14,6 @@ function SectionToggle(props) {
   const selectedLabel = props.selectedLabel || 'Selected';
   const recentLabel = props.selectedLabel || 'Since 2018';
   const invitedLabel = props.selectedLabel || 'Invited';
-  const oralLabel = props.selectedLabel || 'Oral';
-  const posterLabel = props.selectedLabel || 'Poster';
   const buttonStyle = { borderColor: ColorCode[props.selectColor] };
   const selectedStyle = { ...buttonStyle, fontWeight: 'bold', backgroundColor: ColorCode[props.selectColor] };
   const deselectedStyle = {
@@ -30,10 +28,6 @@ function SectionToggle(props) {
     useState((props.toggleSetting === 'recent') ? selectedStyle : deselectedStyle);
     const [invitedStyle, setInvitedStyle] =
       useState((props.toggleSetting === 'invited') ? selectedStyle : deselectedStyle);
-      const [oralStyle, setOralStyle] =
-        useState((props.toggleSetting === 'oral') ? selectedStyle : deselectedStyle);
-        const [posterStyle, setPosterStyle] =
-          useState((props.toggleSetting === 'poster') ? selectedStyle : deselectedStyle);
   const [allStyle, setAllStyle] =
     useState((props.toggleSetting === 'all') ? selectedStyle : deselectedStyle);
 
@@ -42,8 +36,6 @@ function SectionToggle(props) {
       setSelectStyle(selectedStyle);
       setRecentStyle(deselectedStyle);
       setInvitedStyle(deselectedStyle);
-      setOralStyle(deselectedStyle);
-      setPosterStyle(deselectedStyle);
       setAllStyle(deselectedStyle);
       props.onClick('selected');
     } else
@@ -51,8 +43,6 @@ function SectionToggle(props) {
         setSelectStyle(deselectedStyle);
         setRecentStyle(selectedStyle);
         setInvitedStyle(deselectedStyle);
-        setOralStyle(deselectedStyle);
-        setPosterStyle(deselectedStyle);
         setAllStyle(deselectedStyle);
         props.onClick('recent');
       } else
@@ -60,38 +50,16 @@ function SectionToggle(props) {
             setSelectStyle(deselectedStyle);
             setRecentStyle(deselectedStyle);
             setInvitedStyle(selectedStyle);
-            setOralStyle(deselectedStyle);
-            setPosterStyle(deselectedStyle);
             setAllStyle(deselectedStyle);
             props.onClick('invited');
         } else
-            if (buttonName === 'oral') {
-                setSelectStyle(deselectedStyle);
-                setRecentStyle(deselectedStyle);
-                setInvitedStyle(deselectedStyle);
-                setOralStyle(selectedStyle);
-                setPosterStyle(deselectedStyle);
-                setAllStyle(deselectedStyle);
-                props.onClick('oral');
-            } else
-                if (buttonName === 'poster') {
-                    setSelectStyle(deselectedStyle);
-                    setRecentStyle(deselectedStyle);
-                    setInvitedStyle(deselectedStyle);
-                    setOralStyle(deselectedStyle);
-                    setPosterStyle(selectedStyle);
-                    setAllStyle(deselectedStyle);
-                    props.onClick('poster');
-                } else
-                    if (buttonName === 'all') {
-                    setSelectStyle(deselectedStyle);
-                    setRecentStyle(deselectedStyle);
-                    setInvitedStyle(deselectedStyle);
-                    setOralStyle(deselectedStyle);
-                    setPosterStyle(deselectedStyle);
-                    setAllStyle(selectedStyle);
-                    props.onClick('all');
-                    }
+          if (buttonName === 'all') {
+              setSelectStyle(deselectedStyle);
+              setRecentStyle(deselectedStyle);
+              setInvitedStyle(deselectedStyle);
+              setAllStyle(selectedStyle);
+              props.onClick('all');
+              }
   };
 
   return (
@@ -100,8 +68,6 @@ function SectionToggle(props) {
         <Button onClick={() => onClick('selected')} style={selectStyle}>{selectedLabel}</Button>
         <Button onClick={() => onClick('recent')} style={recentStyle}>{recentLabel} ({props.recentCount})</Button>
         <Button onClick={() => onClick('invited')} style={invitedStyle}>{invitedLabel} ({props.invitedCount})</Button>
-        <Button onClick={() => onClick('oral')} style={oralStyle}>{oralLabel} ({props.oralCount})</Button>
-        <Button onClick={() => onClick('poster')} style={posterStyle}>{posterLabel} ({props.posterCount})</Button>
         <Button onClick={() => onClick('all')} style={allStyle}>All ({props.total})</Button>
       </ButtonGroup>
     </Row>

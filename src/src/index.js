@@ -9,6 +9,7 @@ import Bottom from './Bottom';
 //import Research from './Research';
 import Papers from './Papers';
 import Conference from './Conference';
+import Teaching from './Teaching';
 import ResearchInterests from './ResearchInterests';
 import WorkExperience from './WorkExperience';
 import Education from './Education';
@@ -27,18 +28,19 @@ ReactDOM.render(
   <React.StrictMode>
     <Home sectionStyle={sectionStyle}/>
     <Top/>
-    <ResearchInterests sectionStyle={sectionStyle2}/>
-    <WorkExperience sectionStyle={sectionStyle2}/>
-    <Education sectionStyle={sectionStyle2}/>
-    <Papers sectionStyle={sectionStyle2}/>
-    <Conference sectionStyle={sectionStyle2}/>
+    <ResearchInterests sectionStyle={sectionStyle2} themeColour="blue" titleColour="darkBlue"/>
+    <WorkExperience sectionStyle={sectionStyle2} themeColour="blue" titleColour="darkBlue"/>
+    <Education sectionStyle={sectionStyle2} themeColour="yellow" titleColour="darkYellow"/>
+    <Papers sectionStyle={sectionStyle2} themeColour="blue" titleColour="darkBlue"/>
+    <Conference sectionStyle={sectionStyle2} themeColour="blue" titleColour="darkBlue"/>
+    <Teaching sectionStyle={sectionStyle2} themeColour="yellow" titleColour="darkYellow"/>
     <Bottom/>
 
   </React.StrictMode>,
   // eslint-disable-next-line no-undef
   document.getElementById('root'),
 );
-
+//<WorkExperience sectionStyle={sectionStyle2} themeColour="yellow" titleColour="darkYellow"/>
 //<News sectionStyle={sectionStyle2}/>
 //<Research sectionStyle={sectionStyle}/>
 //<Members sectionStyle={sectionStyle}/>

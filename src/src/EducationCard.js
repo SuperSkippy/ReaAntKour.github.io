@@ -1,5 +1,5 @@
 import React from 'react';
-import Accordion from 'react-bootstrap/Accordion';
+//import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import PropTypes from 'prop-types';
 import Markdown from 'react-markdown';
@@ -63,12 +63,24 @@ const formatBelowMap = {
     degree: formatDegreeMore
   };
   
+/* Make it easy to get the colour from caller function. */
+const lightColour = {
+  blue: ColorCode.vlightBlue,
+  yellow: ColorCode.vlightYellow,
+};
+
+/* Make it easy to get the colour from caller function. */
+const darkColour = {
+  blue: ColorCode.darkBlue,
+  yellow: ColorCode.darkYellow,
+};
+
 /**
- * Display a WorkExperience, formatting appropriately for its type.
+ * Display a Education, formatting appropriately for its type.
  * Clicking or tapping it will display its abstract.
  */
-function WorkExperienceCard(props) {
-  const cardStyle = { backgroundColor: `${ColorCode.vlightYellow}`, border: `1px solid ${ColorCode.darkYellow}`, marginBottom: '10px' };
+function EducationCard(props) {
+  const cardStyle = { backgroundColor: `${lightColour[props.selectColor]}`, border: `1px solid ${darkColour[props.selectColor]}`, marginBottom: '10px' };
   return (
       <Card style={cardStyle}>
         <Card.Body>
@@ -82,12 +94,12 @@ function WorkExperienceCard(props) {
             {formatBelowMap[props.entry.type](props.entry)}
           </Markdown>
         </Card.Body>
-        <a href={props.entry.link}> <img alt='Media' style={{ marginRight: '15px' }} className={'rounded float-left'} width='300px' src={props.entry.logo}/> </a>
+        <a href={props.entry.link}> <img alt='Media' style={{ display: 'flex', flex: '1 1 auto', maxWidth: '100%', marginRight: '15px' }} className={'rounded float-left'} src={props.entry.logo}/> </a>
       </Card>
   );
 }
 
-/*function WorkExperienceCard(props) {
+/*function EducationCard(props) {
   const cardStyle = { backgroundColor: `${ColorCode.vlightYellow}`, border: `1px solid ${ColorCode.darkYellow}`, marginBottom: '10px' };
   return (
     <Accordion>
@@ -112,8 +124,8 @@ function WorkExperienceCard(props) {
 //{`${props.entry.contributors.join(', ')} \n ${props.entry.abstract}`}
 //<p style={{ textAlign: 'center' }}> More <span class="glyphicon glyphicon-chevron-down"></span></p>
 
-WorkExperienceCard.propTypes = {
+EducationCard.propTypes = {
   entry: PropTypes.object.isRequired,
 };
 
-export default WorkExperienceCard;
+export default EducationCard;

@@ -32,7 +32,7 @@ function Papers(props) {
     const keys = techreports.getSelectedKeys();
     return (
       <div>
-        {_.map(keys, (key, idx) => <PaperCard key={idx} entry={techreports.getEntry(key)}/>)}
+        {_.map(keys, (key, idx) => <PaperCard key={idx} selectColor={props.themeColour} entry={techreports.getEntry(key)}/>)}
       </div>
     );
   };
@@ -41,7 +41,7 @@ function Papers(props) {
     const keys = techreports.getRecentKeys();
     return (
       <div>
-        {_.map(keys, (key, idx) => <PaperCard key={idx} entry={techreports.getEntry(key)}/>)}
+        {_.map(keys, (key, idx) => <PaperCard key={idx} selectColor={props.themeColour} entry={techreports.getEntry(key)}/>)}
       </div>
     );
   };
@@ -50,7 +50,7 @@ function Papers(props) {
     const keys = techreports.getKeys();
     return (
       <div>
-        {_.map(keys, (key, idx) => <PaperCard key={idx} entry={techreports.getEntry(key)}/>)}
+        {_.map(keys, (key, idx) => <PaperCard key={idx} selectColor={props.themeColour} entry={techreports.getEntry(key)}/>)}
       </div>
     );
   };
@@ -58,8 +58,8 @@ function Papers(props) {
   return (
     <div style={props.sectionStyle} id="papers">
       <Container>
-        <Title title={'Papers'} selectColor="darkBlue"/>
-        <SectionToggle onClick={onClickSectionButton} total={techreports.total()} recentCount={techreports.getRecentCount()} selectColor="darkBlue"/>
+        <Title title={'Papers'} selectColor={props.titleColour}/>
+        <SectionToggle onClick={onClickSectionButton} total={techreports.total()} recentCount={techreports.getRecentCount()} selectColor={props.titleColour}/>
         {display === 'selected' ? renderSelected() : (display === 'recent' ? renderRecent() : renderAll())}
         <p>* joint first authors, †joint corresponding authors</p>
       </Container>
