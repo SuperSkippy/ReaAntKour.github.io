@@ -32,6 +32,7 @@ src/Sponsors.js
 src/SponsorCard.js 
 src/Research.js 
 src/ResearchCard.js
+src/SectionToggleConference_many_options.js
  
 src/data/MemberData.js 
 src/data/NewsData.js 

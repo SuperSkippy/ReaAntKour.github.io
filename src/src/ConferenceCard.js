@@ -19,13 +19,25 @@ const formatMap = {
   Poster: formatConference,
   Participation: formatConference,
 };
+  
+/* Make it easy to get the colour from caller function. */
+const lightColour = {
+  blue: ColorCode.vlightBlue,
+  yellow: ColorCode.vlightYellow,
+};
+
+/* Make it easy to get the colour from caller function. */
+const darkColour = {
+  blue: ColorCode.darkBlue,
+  yellow: ColorCode.darkYellow,
+};
 
 /**
- * Display a Paper, formatting appropriately for its type.
+ * Display a Conference, formatting appropriately for its type.
  * Clicking or tapping it will display its abstract.
  */
-function PaperCard(props) {
-  const cardStyle = { backgroundColor: `${ColorCode.vlightYellow}`, border: `1px solid ${ColorCode.darkYellow}`, marginBottom: '10px' };
+function ConferenceCard(props) {
+  const cardStyle = { backgroundColor: `${lightColour[props.selectColor]}`, border: `1px solid ${darkColour[props.selectColor]}`, marginBottom: '10px' };
   return (
     <Card style={cardStyle}>
       <Card.Body>
@@ -38,8 +50,8 @@ function PaperCard(props) {
 }
 //<p style={{ textAlign: 'center' }}> Abstract <span class="glyphicon glyphicon-chevron-down"></span></p>
 
-PaperCard.propTypes = {
+ConferenceCard.propTypes = {
   entry: PropTypes.object.isRequired,
 };
 
-export default PaperCard;
+export default ConferenceCard;

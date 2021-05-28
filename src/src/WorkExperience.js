@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Title from './Title';
 import WorkExperienceData from './data/WorkExperienceData';
 import WorkExperienceCard from './WorkExperienceCard';
-import { ColorCode } from './Constants';
+//import { ColorCode } from './Constants';
 
 /**
  * Display the Work Experience section.
@@ -17,7 +17,7 @@ const workExperienceData = new WorkExperienceData();
     const keys = workExperienceData.getKeys();
     return (
       <div>
-        {_.map(keys, (key, idx) => <WorkExperienceCard key={idx} entry={workExperienceData.getEntry(key)}/>)}
+        {_.map(keys, (key, idx) => <WorkExperienceCard key={idx} selectColor={props.themeColour} entry={workExperienceData.getEntry(key)}/>)}
       </div>
     );
   };
@@ -25,7 +25,7 @@ const workExperienceData = new WorkExperienceData();
   return (
     <div style={props.sectionStyle} id="workExperience">
       <Container>
-        <Title title={'Research Experience'} selectColor="darkBlue"/>
+        <Title title={'Research Experience'} selectColor={props.titleColour}/>
         {renderAll()}
       </Container>
     </div>

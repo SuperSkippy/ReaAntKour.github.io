@@ -60,7 +60,7 @@ function Conferences(props) {
               }
     return (
       <div>
-        {_.map(keys, (key, idx) => <ConferenceCard key={idx} entry={conferenceData.getEntry(key)}/>)}
+        {_.map(keys, (key, idx) => <ConferenceCard key={idx} selectColor={props.themeColour} entry={conferenceData.getEntry(key)}/>)}
       </div>
     );
   };
@@ -69,7 +69,7 @@ function Conferences(props) {
     const keys = conferenceData.getRecentKeys();
     return (
       <div>
-        {_.map(keys, (key, idx) => <ConferenceCard key={idx} entry={conferenceData.getEntry(key)}/>)}
+        {_.map(keys, (key, idx) => <ConferenceCard key={idx} selectColor={props.themeColour} entry={conferenceData.getEntry(key)}/>)}
       </div>
     );
   };
@@ -78,7 +78,7 @@ function Conferences(props) {
     const keys = conferenceData.getSelectedKeys();
     return (
       <div>
-        {_.map(keys, (key, idx) => <ConferenceCard key={idx} entry={conferenceData.getEntry(key)}/>)}
+        {_.map(keys, (key, idx) => <ConferenceCard key={idx} selectColor={props.themeColour} entry={conferenceData.getEntry(key)}/>)}
       </div>
     );
   };
@@ -87,7 +87,7 @@ function Conferences(props) {
     const keys = conferenceData.getKeys();
     return (
       <div>
-        {_.map(keys, (key, idx) => <ConferenceCard key={idx} entry={conferenceData.getEntry(key)}/>)}
+        {_.map(keys, (key, idx) => <ConferenceCard key={idx} selectColor={props.themeColour} entry={conferenceData.getEntry(key)}/>)}
       </div>
     );
   };
@@ -95,8 +95,8 @@ function Conferences(props) {
   return (
     <div style={props.sectionStyle} id="conferences">
       <Container>
-        <Title title={'Conferences and Seminars'} selectColor="darkYellow"/>
-        <SectionToggle onClick={onClickSectionButton} total={conferenceData.total()} recentCount={conferenceData.getRecentCount()} invitedCount={conferenceData.getInvitedCount()} oralCount={conferenceData.getOralCount()} posterCount={conferenceData.getPosterCount()} selectColor="darkYellow"/>
+        <Title title={'Conferences and Seminars'} selectColor={props.titleColour}/>
+        <SectionToggle onClick={onClickSectionButton} total={conferenceData.total()} recentCount={conferenceData.getRecentCount()} invitedCount={conferenceData.getInvitedCount()} oralCount={conferenceData.getOralCount()} posterCount={conferenceData.getPosterCount()} selectColor={props.titleColour}/>
         {render(display)}
       </Container>
     </div>
